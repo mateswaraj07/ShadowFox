@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartCart - E-commerce</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🛍️ SmartCart</h1>
+    <input type="text" id="searchInput" placeholder="Search products..."/>
+  </header>
+
+  <section class="filters">
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+
+    <select id="sortOptions">
+      <option value="">Sort by</option>
+      <option value="priceLowHigh">Price: Low to High</option>
+      <option value="priceHighLow">Price: High to Low</option>
+      <option value="nameAsc">Name: A-Z</option>
+    </select>
+  </section>
+
+  <main id="productList" class="products"></main>
+
+  <section class="checkout">
+    <h2>🧾 Checkout</h2>
+    <div id="cartItems"></div>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+    <button onclick="checkout()">Place Order</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
